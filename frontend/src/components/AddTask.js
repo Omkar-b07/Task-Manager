@@ -16,7 +16,7 @@ const AddTask = ({ onTaskAdded }) => {
         try {
             const token = localStorage.getItem('token');
              console.log('Token being sent:', token);
-            const res = await axios.post('http://localhost:5000/api/tasks', 
+            const res = await axios.post('https://task-manager-rvcm.onrender.com', 
                 { title }, // The data to send
                 { 
                     headers: { 'Authorization': `Bearer ${token}` } 

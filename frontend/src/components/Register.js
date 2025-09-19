@@ -26,7 +26,7 @@ function Register({ setToken }) {
 
         try {
             // Make the API call to your backend's registration route
-                const res = await axios.post('https://task-manager-api-omkar.onrender.com/api/users/login',{
+                const res = await axios.post('https://task-manager-rvcm.onrender.com',{
                 name,
                 email,
                 password,

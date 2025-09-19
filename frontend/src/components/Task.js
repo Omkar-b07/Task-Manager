@@ -14,7 +14,7 @@ function Tasks({ token, initialTasks, setTasks }) {
         const fetchTasks = async () => {
             try {
                 setError(null);
-                    const res = await axios.post('https://task-manager-api-omkar.onrender.com/api/users/login', {
+                    const res = await axios.post('https://task-manager-rvcm.onrender.com', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 setTasks(res.data);

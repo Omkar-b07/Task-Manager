@@ -19,7 +19,7 @@ function Login({ setToken }) {
         setError('');
         try {
             // 1. Make the API call to your backend's login route
-                const res = await axios.post('https://task-manager-api-omkar.onrender.com/api/users/login', {
+                const res = await axios.post('https://task-manager-rvcm.onrender.com', {
                 email,
                 password,
             });
