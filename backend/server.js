@@ -19,6 +19,8 @@ app.use(express.json());
 
 // Routes
 app.use("/api/users", userRoutes);
+console.log("User routes mounted at /api/users");
+
 app.use('/api/tasks', taskRoutes);
 
 // Simple root route for testing
